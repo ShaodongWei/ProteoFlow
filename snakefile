@@ -10,7 +10,7 @@ rule all:
 rule counts_abundances:
     input:
         cleaned_data = config['cleaned_data'],
-        raw_data = config['raw_data']
+        raw_data = config['raw_data'],
         meta = config['metadata']
     output:
         config["output_directory"] + "/.abundances_counts.done",
@@ -20,19 +20,6 @@ rule counts_abundances:
         "env/packages.yaml"
     script:
         'scripts/counts_abundance.py'
-
-# rule sample_feature_count:
-#     input:
-#         data = config['lfq_table'],
-#         meta = config['metadata']
-#     output:
-#         config["output_directory"] + "/.LFQ.done"
-#     params:
-#         output_dir = config["output_directory"]
-#     conda:
-#         "env/packages.yaml"
-#     script:
-#         'scripts/feature_count.py'
         
 rule differential_test:
     input:
