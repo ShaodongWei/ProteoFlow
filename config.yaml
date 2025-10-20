@@ -1,0 +1,5 @@
+lfq_table: "./data_input/cleaned_data.tsv"
+metadata: "./data_input/metadata.tsv"
+group_column: "sample_type"
+output_directory: "./output"
+threads: 10
