@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas=2.2.2
+  - numpy=1.26.4
+  - plotly=5.24.1
+  - matplotlib=3.9.2
+  - scikit-learn=1.7.0
+  - xgboost=3.0.5
+  - umap-learn=0.5.9.post2
+  - statsmodels=0.14.2
+  - pip:
+    - kaleido 
