@@ -17,7 +17,7 @@ rule LFQ:
     params:
         output_dir = config["output_directory"]
     conda:
-        "../env/packages.yaml"
+        "./env/packages.yaml"
     script:
         './LFQ.py'
 
@@ -34,7 +34,7 @@ rule differential_test:
         group_column = config['group_column'],
         threads = config['threads']
     conda:
-        "../env/packages.yaml"
+        "./env/packages.yaml"
     script:
         './differential_test.py'
 
@@ -51,7 +51,7 @@ rule machine_learning:
         group_column = config['group_column'],
         threads = config['threads']
     conda:
-        "../env/packages.yaml"
+        "./env/packages.yaml"
     script:
         './machine_learning.py'
 
@@ -67,7 +67,7 @@ rule ROC:
         group_column = config['group_column'],
         threads = config['threads']
     conda:
-        "../env/packages.yaml"
+        "./env/packages.yaml"
     script:
         './ROC.py'
 
