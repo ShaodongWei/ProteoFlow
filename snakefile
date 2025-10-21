@@ -19,8 +19,8 @@ rule counts_abundances:
     conda:
         "env/packages.yaml"
     script:
-        'scripts/counts_abundance.py'
-        
+        'scripts/counts_abundances.py'
+
 rule differential_test:
     input:
         config["output_directory"] + "/.abundances_counts.done",
