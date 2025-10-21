@@ -57,7 +57,7 @@ This step is to do thorough machine learning by iterating different machine lear
 snakemake  machine_learning --cores threads_number --use-conda
 ```
 ### Step 4, plot ROC
-This step is to plot ROC based on the selected machine learning method. The model is cross-validation, and ROC for each fold is in gray and the mean ROC for all folds is in blue. 
+This step is to plot ROC based on the selected machine learning method. 
 ```
 snakemake ROC --cores threads_number --use-conda
 ```
