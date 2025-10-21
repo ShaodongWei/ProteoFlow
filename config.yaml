@@ -1,6 +1,6 @@
 cleaned_data: "data_input/cleaned_data.tsv"
 raw_data: "data_input/raw_data.tsv"
-metadata: "data_input/metadata.2class.2.tsv"
+metadata: "data_input/metadata.tsv"
 group_column: "sample_type"
 output_directory: "output"
 threads: 10
