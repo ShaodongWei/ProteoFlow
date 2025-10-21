@@ -41,7 +41,7 @@ snakemake step_name --cores threads_number --use-conda # Run a specific step
 
 ```
 ## 4. Steps in the workflow 
-### Step 1, Labelfree quantification (LFQ) intensity plot and the number of detected proteins/peptides per sample 
+### Step 1, Label-free quantification (LFQ) intensity plot and the number of detected proteins/peptides per sample 
 This step is to show the global intensity distribution and the protein/peptide number per sample. 
 ```
 snakemake counts_abundances --cores threads_number --use-conda
