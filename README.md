@@ -18,14 +18,14 @@ git clone https://github.com/ShaodongWei/ProteoFlow.git
 
 ```
 ## 2. Set up the configuration file 
-
+```
 cleaned_data: "data_input/cleaned_data.tsv" # the input abundance table (first column is sample id), can be protein or peptide level 
 raw_data: "data_input/raw_data.tsv" # the abundance table that is not preprocessed. 
 metadata: "data_input/metadata.tsv" # the input metadata table (first column is sample id). 
 group_column: "sample_type" # the column names in metadata to group samples. 
 output_directory: "output" # the output directory name 
 threads: 10 # number of threads 
-
+```
 
 ## 3. Run the pipeline using snakemake
 ### Run the entire pipeline 
