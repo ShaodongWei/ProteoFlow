@@ -19,8 +19,8 @@ git clone https://github.com/ShaodongWei/ProteoFlow.git
 ```
 ## 2. Set up the configuration file 
 
-```
-lfq_table: "data_input/cleaned_data.tsv" # the input abudance table (first column is sample id), can be protein or peptide level 
+cleaned_data: "data_input/cleaned_data.tsv" # the input abundance table (first column is sample id), can be protein or peptide level 
+raw_data: "data_input/raw_data.tsv" # the abundance table that is not preprocessed. 
 metadata: "data_input/metadata.tsv" # the input metadata table (first column is sample id). 
 group_column: "sample_type" # the column names in metadata to group samples. 
 output_directory: "output" # the output directory name 
