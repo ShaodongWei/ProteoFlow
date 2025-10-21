@@ -1,5 +1,5 @@
 # When to use
-This script is to do proteomics downstream analysis, including statistics, volcano plot, machine learning modelling, ROC plot. The input abundance table has to be preprocessed first, please check [ProtepPrep](https://github.com/ShaodongWei/ProteoPrep) how to preprocessing proteomics data. 
+This script is to do proteomics downstream analysis, including statistics, volcano plot, machine learning modelling, ROC plot. The input abundance table has to be preprocessed first, please check [ProteoPrep](https://github.com/ShaodongWei/ProteoPrep) how to preprocessing proteomics data. 
 
 # Getting Started
 ## Prerequisites
