@@ -47,17 +47,17 @@ This step is to show the global intensity distribution and the protein/peptide n
 snakemake counts_abundances --cores threads_number --use-conda
 ```
 ### Step 2, differential analysis
-This step is to do differential test to identify which proteins/peptides show statistically significant differences in abundance between two biological conditions (so far only 2 levels is supported).
+This step is to do differential test to identify which proteins/peptides show statistically significant differences in abundance between two biological conditions (so far only 2 levels is supported). Also, it generates the volcano plot to show the significant vs. non-significant features. 
 ```
 snakemake differential_test --cores threads_number --use-conda
 ```
 ### Step 3, machine learning
-This step is to do thorough machine learning by iterating different machine learning models and perform cross-validations and eventually returns the best selected method. 
+This step is to do machine learning thoroughly by iterating different machine learning models and perform cross-validations and eventually return the best selected method. 
 ```
 snakemake  machine_learning --cores threads_number --use-conda
 ```
 ### Step 4, plot ROC
-This step is to plot ROC based on the selected machine learning method. 
+This step is to plot ROC based on the selected machine learning method. It shows the ROC for each cross-validation fold, the overall average ROC across all folds, and the mean AUC. 
 ```
 snakemake ROC --cores threads_number --use-conda
 ```
