@@ -26,6 +26,11 @@ df_sig = pd.read_csv(f"{snakemake.params.output_dir}/df_differential_test.tsv", 
 df_ml = pd.merge(df, df_sig[['feature','pval_adj']], on='feature', how='left')
 df_ml = df_ml[df_ml['pval_adj'] < 0.5]
 
+## check number of significant features
+if df_ml.shape[0] == 0:
+    raise ValueError('No features are significant')
+
+## make X, y
 X = df_ml.pivot(index=['sample',snakemake.params.group_column], columns='feature', values='abundance')
 y = pd.Series(X.index.get_level_values(snakemake.params.group_column)).astype('category').cat.codes
 
