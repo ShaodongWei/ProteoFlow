@@ -86,7 +86,7 @@ ot_roc_mean = pd.concat([start_point, ot_roc_mean]).reset_index(drop=True)
 
 # mean auc 
 mask = ot_roc[['fold','auc']].duplicated()
-mean_auc = ot_roc.loc[~mask, ['auc']].mean().values[0] # mean AUC for all folds
+mean_auc = np.round(ot_roc.loc[~mask, ['auc']].mean().values[0],3) # mean AUC for all folds
 
 # plot 
 fig = go.Figure()
