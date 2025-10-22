@@ -1,5 +1,5 @@
 # When to use
-This script is to do proteomics downstream analysis, including statistics, volcano plot, machine learning modelling, ROC plot. The input abundance table has to be preprocessed first, please check [ProteoPrep](https://github.com/ShaodongWei/ProteoPrep) how to preprocessing proteomics data. 
+This script is to do proteomics downstream analysis, including statistics, volcano plot, machine learning modelling, ROC plot. The input abundance table has to be preprocessed first, please check [ProteoPrep](https://github.com/ShaodongWei/ProteoPrep) how to preprocess proteomics data. 
 
 # Getting Started
 ## Prerequisites
@@ -22,7 +22,7 @@ git clone https://github.com/ShaodongWei/ProteoFlow.git
 cleaned_data: "data_input/cleaned_data.tsv" # the input abundance table (first column is sample id, other columns are features, rows are samples), can be protein or peptide level 
 raw_data: "data_input/raw_data.tsv" # the abundance table that is not preprocessed. 
 metadata: "data_input/metadata.tsv" # the input metadata table (first column is sample id). 
-group_column: "sample_type" # the column names in metadata to group samples. 
+group_column: "group" # the column names in metadata to group samples. 
 output_directory: "output" # the output directory name 
 threads: 10 # number of threads 
 ```
