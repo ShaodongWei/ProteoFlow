@@ -57,7 +57,7 @@ offset = 10 ** np.floor(np.log10(raw_offset))
 print(offset)
 level = re.sub('>', '/', df_sig['level'].values[0])
 df_sig['y'] = df_sig['pval_adj'].apply(lambda x: -np.log10(offset) if x == 0 else -np.log10(x))
-fig = px.scatter(df_sig, x='log2foldratio', y='y', color='Significance')
+fig = px.scatter(df_sig, x='log2foldratio', y='y', color='Significance', color_discrete_map={'Significant': 'red', 'Non-significant': 'blue'})
 fig.update_layout(
     yaxis_title="-log10(adjusted p-value)",
     xaxis_title=f"log2(fold change {level})",
