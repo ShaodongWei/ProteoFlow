@@ -52,7 +52,7 @@ This step is to do differential test to identify which proteins/peptides show st
 snakemake differential_test --cores threads_number --use-conda
 ```
 ### Step 3, machine learning
-This step is to do machine learning thoroughly by iterating different machine learning models and perform cross-validations and eventually return the best selected method. 
+This step is to do machine learning thoroughly by iterating different machine learning models (including Logitic regression, Random forest, Support vector machine, K-Nearest Neighbors, Gradient Boosting, XGBoost, Naive Bayes, Decision Tree) and perform cross-validations and eventually return the best selected method. 
 ```
 snakemake  machine_learning --cores threads_number --use-conda
 ```
